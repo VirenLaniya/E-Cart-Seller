@@ -1,0 +1,55 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/styles/authentication/style.css">
+    <link rel="stylesheet" href="/styles/authentication/responsive.css">
+</head>
+
+<body>
+    <section>
+        <div class="auth-sidebar">
+            <img src="/assets/illustrations/signup_illustrator.svg" alt="Welcome to E-Cart">
+        </div>
+        <div class="auth-content">
+            <form action="/signup" class="auth-form" method="post">
+                <h2>Register To E-Cart Seller</h2>
+                <div class="input-container">
+                    <label for="name">Seller name</label>
+                    <input type="text" name="name" placeholder="Enter seller name">
+                </div>
+                <div class="input-container">
+                    <label for="bname">Business(Retail/Store) name</label>
+                    <input type="text" name="bname" placeholder="Enter your business name">
+                </div>
+                <div class="input-container">
+                    <label for="mobile">Mobile</label>
+                    <input type="number" name="mobile" placeholder="Enter mobile number">
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter email">
+                </div>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Enter password">
+                </div>
+                <div class="input-container">
+                    <label for="conf-password">Confirm Password</label>
+                    <input type="password" name="conf-password" placeholder="Confirm your password">
+                </div>
+                <div class="check">
+                    <label><input type="checkbox">Agree with all terms and conditions.</label>
+                </div>
+                <div class="input-container">
+                    <button type="submit" class="auth-submit-btn">Sign up</button>
+                </div>
+                <div class="input-container">
+                    <p>Already have an account? <a href="/login">Sign in</a></p>
+                </div>
+                <a href="/" class="back-to-home">
+                    Back to Home
+                </a>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

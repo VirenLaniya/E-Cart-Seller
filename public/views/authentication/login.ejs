@@ -1,0 +1,40 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/styles/authentication/style.css">
+    <link rel="stylesheet" href="/styles/authentication/responsive.css">
+</head>
+
+<body>
+    <section>
+        <div class="auth-sidebar">
+            <img src="/assets/illustrations/login_illustrator.svg" alt="Welcome Back">
+        </div>
+        <div class="auth-content">
+            <form action="/login" class="auth-form" method="post">
+                <h3>Welcome, Back</h3>
+                <h2>Login To E-Cart Seller</h2>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter email">
+                </div>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Enter password">
+                </div>
+                <div class="check">
+                    <label><input type="checkbox">Remember me</label>
+                </div>
+                <div class="input-container">
+                    <button type="submit" class="auth-submit-btn">Sign in</button>
+                </div>
+                <div class="input-container">
+                    <p>Don't have an account? <a href="/signup">Sign up</a></p>
+                </div>
+                <a href="/" class="back-to-home">
+                    Back to Home
+                </a>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
